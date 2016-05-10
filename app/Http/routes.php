@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+// allow get and post
+Route::get('search', 'SearchController@query');
